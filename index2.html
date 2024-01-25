@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button id="botao">mudar cor do body</button>
+    <input type="text" id="meuCampo">
+
+    <div id="meuElemento"></div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+
+let button = document.getElementById("botao");
+let campo = document.getElementById("meuCampo");
+let elemento = document.getElementById("meuElemento");
+
+button.addEventListener("click", () => {
+document.body.style.background = "#0000FF";
+});
+
+campo.addEventListener("input", () => {
+alert("valor alterado", campo.value);
+});
+
+elemento.addEventListener("mouseout", () => {
+elemento.style.backgroundColor = "#0000FF";
+});
+
+elemento.addEventListener("mouseover", () => {
+elemento.style.backgroundColor = "#000000";
+});
